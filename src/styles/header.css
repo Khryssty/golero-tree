@@ -2,8 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 1rem 2rem;
-  background-color: hsl(210, 29%, 24%);
+  /* padding: 1rem 1rem; */
+  /* background-color: hsl(210, 29%, 24%); */
   color: white;
   width: 100vw ;
   height: 15vh;
@@ -13,6 +13,13 @@
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+.logo-image {
+  height: auto;
+  width: 12%;
+  /* margin-right: 0.5rem; */
+  vertical-align: middle;
 }
 
 .nav a {

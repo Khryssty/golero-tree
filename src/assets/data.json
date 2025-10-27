@@ -1,0 +1,52 @@
+[
+  {
+    "id": "G1.1",
+    "data": {
+      "fn": "Periano",
+      "ln": "Golero",
+      "desc": "Patriarch of the Golero family",
+      "label": "Periano Golero",
+      "avatar": "https://upload.wikimedia.org/wikipedia/commons/6/69/Mary_Soames_%281965%29.jpg",
+      "gender": "M"
+    },
+    "rels": {
+      "father": "",
+      "mother": "",
+      "spouses": [
+        "G1.2"
+      ],
+      "children": [
+        "Q390192",
+        "Q3052477",
+        "Q3453283",
+        "Q13408312",
+        "Q75386090"
+      ]
+    }
+  },
+    {
+    "id": "G1.2",
+    "data": {
+      "fn": "Winston Leonard",
+      "ln": "Spencer-Churchill Churchill",
+      "desc": "British statesman, soldier and writer (1874–1965)",
+      "label": "Winston Churchill",
+      "avatar": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Sir_Winston_Churchill_-_19086236948.jpg",
+      "gender": "M"
+    },
+    "rels": {
+      "father": "Q314773",
+      "mother": "Q243011",
+      "spouses": [
+        "Q263454"
+      ],
+      "children": [
+        "Q5271122",
+        "Q183105",
+        "Q2405785",
+        "Q13408289",
+        "Q508525"
+      ]
+    }
+  }
+]
