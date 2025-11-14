@@ -2,7 +2,7 @@
 import { useState } from "react";
 import AppHeader from "./components/AppHeader.jsx";
 import TopPanel from "./components/TopPanel.jsx";
-import FamilyTreeChart from "./components/familyTreeChart.jsx";
+import FamilyTreeChart from "./components/FamilyTreeChart.jsx";
 import Sidebar from "./components/Sidebar.jsx";
 import AppFooter from "./components/AppFooter.jsx";
 
