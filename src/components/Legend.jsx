@@ -15,11 +15,7 @@ export default function Legend() {
       alignItems="center"
       gap={4}
     >
-      <Heading
-        size="xs"
-        fontWeight="semibold"
-        marginRight={2}
-      >
+      <Heading size="xs" fontWeight="semibold" marginRight={2}>
         Legend
       </Heading>
 
@@ -37,24 +33,25 @@ export default function Legend() {
 
       {/* First Marriage */}
       <Flex align="center" gap={2}>
-        <Box w="16px" h="12px" borderBottom="2px solid" borderColor="green.300" />
-        <Text>Child from First Marriage (John + Mary)</Text>
+        <Box
+          w="16px"
+          h="12px"
+          borderBottom="2px solid"
+          borderColor="green.300"
+        />
+        <Text>Child from First Marriage</Text>
       </Flex>
 
       {/* Second Marriage */}
       <Flex align="center" gap={2}>
-        <Box w="16px" h="12px" borderBottom="2px solid" borderColor="purple.300" />
-        <Text>Child from Second Marriage (John + Laura)</Text>
+        <Box
+          w="16px"
+          h="12px"
+          borderBottom="2px solid"
+          borderColor="purple.300"
+        />
+        <Text>Child from Second Marriage</Text>
       </Flex>
-
-      {/* Tip */}
-      <Text
-        fontSize="0.7rem"
-        color="gray.500"
-        marginLeft="auto"
-      >
-        Tip: Click any card to view full details in the sidebar.
-      </Text>
     </Box>
   );
 }

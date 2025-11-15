@@ -1,11 +1,13 @@
 import React from "react";
-import * as d3 from "d3"; // npm install d3 or yarn add d3
-import * as f3 from "family-chart"; // npm install family-chart@0.9.0 or yarn add family-chart@0.9.0
+import * as d3 from "d3"; 
+import * as f3 from "family-chart"; 
 import "family-chart/styles/family-chart.css";
 import familyData from "../data/familyData.json";
 
 export default class FamilyTree extends React.Component {
   cont = React.createRef();
+  
+
 
   componentDidMount() {
     if (!this.cont.current) return;
@@ -14,11 +16,15 @@ export default class FamilyTree extends React.Component {
     create(familyData);
 
     function create(data) {
+
+      
       const f3Chart = f3
         .createChart("#FamilyChart", data)
         .setTransitionTime(1000)
         .setCardXSpacing(250)
         .setCardYSpacing(150);
+        
+    
 
       f3Chart
         .setCardHtml()
@@ -144,7 +150,11 @@ export default class FamilyTree extends React.Component {
           backgroundColor: "rgb(33,33,33)",
           color: "#171616ff",
         }}
-      ></div>
+        
+      >
+        
+
+      </div>
     );
   }
 }

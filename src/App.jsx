@@ -1,8 +1,7 @@
-
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 
 import AppHeader from "./components/AppHeader.jsx";
-import TopPanel from "./components/TopPanel.jsx";
+import Legend from "./components/Legend.jsx";
 import FamilyTreeChart from "./components/FamilyTreeChart.jsx";
 
 import AppFooter from "./components/AppFooter.jsx";
@@ -34,7 +33,6 @@ export default function App() {
 
         {/* Tree + Sidebar Section */}
         <Box w="100%">
-
           <Box
             bg="rgba(15, 23, 42, 0.7)"
             border="1px solid"
@@ -45,7 +43,10 @@ export default function App() {
             overflow="hidden"
           >
             <Heading size="md" mb={2}>
-              Interactive Family Tree
+              <Flex align="center" justify="space-between" mb={2}>
+                <Heading size="md">Interactive Family Tree</Heading>
+                <Legend />
+              </Flex>
             </Heading>
 
             <Text fontSize="xs" color="gray.400" mb={2}>
@@ -65,8 +66,6 @@ export default function App() {
               <FamilyTreeChart />
             </Box>
           </Box>
-
-
         </Box>
       </Flex>
 
