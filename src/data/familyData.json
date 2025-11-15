@@ -106,7 +106,7 @@
       "birthday": "0000",
       "gender": "M"
     },
-    "rels": { "parents": ["1", "2"] }
+    "rels": { "parents": ["1", "2"], "spouses": ["14"] ,"children": ["15", "16"] }
   },
   {
     "id": "11",
@@ -137,5 +137,38 @@
       "gender": "F"
     },
     "rels": { "parents": ["1", "3"] }
+  },
+  {
+    "id": "14",
+    "data": {
+      "firstName": "Jovita",
+      "lastName": "Sario",
+      "birthday": "0000",
+      "gender": "F"
+    },
+    "rels": {
+      "spouses": ["10"],
+      "children": ["15", "16"]
+    }
+  },
+  {
+    "id": "15",
+    "data": {
+      "firstName": "Teresita",
+      "lastName": "Golero",
+      "birthday": "1951",
+      "gender": "F"
+    },
+    "rels": { "parents": ["10", "14"] }
+  },
+  {
+    "id": "16",
+    "data": {
+      "firstName": "Rolando",
+      "lastName": "Golero",
+      "birthday": "1952",
+      "gender": "M"
+    },
+    "rels": { "parents": ["10", "14"] }
   }
 ]

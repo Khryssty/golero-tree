@@ -1,13 +1,11 @@
 import React from "react";
-import * as d3 from "d3"; 
-import * as f3 from "family-chart"; 
+import * as d3 from "d3";
+import * as f3 from "family-chart";
 import "family-chart/styles/family-chart.css";
 import familyData from "../data/familyData.json";
 
 export default class FamilyTree extends React.Component {
   cont = React.createRef();
-  
-
 
   componentDidMount() {
     if (!this.cont.current) return;
@@ -16,24 +14,18 @@ export default class FamilyTree extends React.Component {
     create(familyData);
 
     function create(data) {
-
-      
       const f3Chart = f3
         .createChart("#FamilyChart", data)
         .setTransitionTime(1000)
         .setCardXSpacing(250)
         .setCardYSpacing(150);
-        
-    
 
       f3Chart
         .setCardHtml()
-        .setCardDisplay([["firstName", "lastName"]])
+        .setCardDisplay([["firstName", "lastName", "birthday"]])
         .setCardDim({ h: 70 });
 
       f3Chart.updateMainId("1"); // Periano
-
-
 
       f3Chart.updateTree({ initial: true });
 
@@ -91,11 +83,14 @@ export default class FamilyTree extends React.Component {
       const search_input = search_cont
         .append("input")
         .style("width", "100%")
-        .style("padding", "6px")
-        .style("border-radius", "8px")
-        .style("border", "1px solid #444")
-        .style("background", "#222222")
-        .style("color", "#fff")
+        .style("padding", "8px 10px")
+        .style("border-radius", "10px")
+        .style("border", "1px solid #aaa")
+        .style("background", "#f5f5f2") // <<< dirty white
+        .style("color", "#222") // dark text
+        .style("font-size", "14px")
+        .style("outline", "none")
+        .style("box-shadow", "0 2px 6px rgba(0,0,0,0.2)")
         .attr("type", "text")
         .attr("placeholder", "Search")
         .on("focus", activateDropdown)
@@ -105,7 +100,20 @@ export default class FamilyTree extends React.Component {
         .append("div")
         .attr(
           "style",
-          "overflow-y: auto; max-height: 300px; background-color: #beb0b0ff;"
+          `
+      overflow-y: auto;
+      max-height: 300px;
+      background: #faf8f3;               /* light warm dirty white */
+      border-radius: 10px;
+      padding: 6px 0;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.25);  /* soft shadow */
+      border: 1px solid #cfcfcf;
+      position: absolute;
+      width: 100%;
+      z-index: 2000;
+      outline: none;
+      display: none;
+    `
         )
         .attr("tabindex", "0")
         .on("wheel", (e) => {
@@ -113,6 +121,7 @@ export default class FamilyTree extends React.Component {
         });
 
       function activateDropdown() {
+        dropdown.style("display", "block");
         const search_input_value = search_input.property("value");
         const filtered_options = all_select_options.filter((d) =>
           d.label.toLowerCase().includes(search_input_value.toLowerCase())
@@ -120,22 +129,26 @@ export default class FamilyTree extends React.Component {
         updateDropdown(filtered_options);
       }
 
-      function updateDropdown(filtered_options) {
-        dropdown
-          .selectAll("div")
-          .data(filtered_options)
-          .join("div")
-          .attr(
-            "style",
-            "padding: 5px;cursor: pointer;border-bottom: .5px solid currentColor;"
-          )
-          .on("click", (e, d) => {
-            updateTreeWithNewMainPerson(d.value, true);
-          })
-          .text((d) => d.label);
-      }
+function updateDropdown(filtered_options) {
+  dropdown
+    .selectAll("div")
+    .data(filtered_options)
+    .join("div")
+    .attr("style", `padding: 8px 12px; cursor: pointer; border-bottom: 1px solid #e3e3e3;`)
+    .text(d => d.label)
+    .on("click", (e, d) => {
+      updateTreeWithNewMainPerson(d.value, true);
+      dropdown.style("display", "none");   // hide after select
+    });
+
+  // Hide if no results
+  if (filtered_options.length === 0) {
+    dropdown.style("display", "none");
+  }
+}
     }
   }
+
 
   render() {
     return (
@@ -150,11 +163,7 @@ export default class FamilyTree extends React.Component {
           backgroundColor: "rgb(33,33,33)",
           color: "#171616ff",
         }}
-        
-      >
-        
-
-      </div>
+      ></div>
     );
   }
 }
