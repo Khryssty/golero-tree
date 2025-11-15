@@ -2,9 +2,9 @@
   {
     "id": "1",
     "data": {
-      "firstName": "John",
-      "lastName": "Smith",
-      "birthday": "1975",
+      "firstName": "Periano",
+      "lastName": "Golero",
+      "birthday": "0000",
       "gender": "M"
     },
     "rels": {
@@ -15,9 +15,9 @@
   {
     "id": "2",
     "data": {
-      "firstName": "Mary",
-      "lastName": "Smith",
-      "birthday": "1977",
+      "firstName": "Bebang",
+      "lastName": "Golero",
+      "birthday": "0000",
       "gender": "F"
     },
     "rels": {
@@ -28,9 +28,9 @@
   {
     "id": "3",
     "data": {
-      "firstName": "Laura",
-      "lastName": "Smith",
-      "birthday": "1980",
+      "firstName": "Esther",
+      "lastName": "Golero",
+      "birthday": "0000",
       "gender": "F"
     },
     "rels": {
@@ -41,19 +41,19 @@
   {
     "id": "4",
     "data": {
-      "firstName": "Alex",
-      "lastName": "Smith",
-      "birthday": "2000",
-      "gender": "M"
+      "firstName": "Mameng",
+      "lastName": "Golero",
+      "birthday": "0000",
+      "gender": "F"
     },
     "rels": { "parents": ["1", "2"] }
   },
   {
     "id": "5",
     "data": {
-      "firstName": "Ben",
-      "lastName": "Smith",
-      "birthday": "2002",
+      "firstName": "Ando",
+      "lastName": "Golero",
+      "birthday": "0000",
       "gender": "M"
     },
     "rels": { "parents": ["1", "2"] }
@@ -61,9 +61,9 @@
   {
     "id": "6",
     "data": {
-      "firstName": "Chris",
-      "lastName": "Smith",
-      "birthday": "2004",
+      "firstName": "Pede",
+      "lastName": "Golero",
+      "birthday": "0000",
       "gender": "M"
     },
     "rels": { "parents": ["1", "2"] }
@@ -71,9 +71,9 @@
   {
     "id": "7",
     "data": {
-      "firstName": "David",
-      "lastName": "Smith",
-      "birthday": "2006",
+      "firstName": "Cadjo",
+      "lastName": "Golero",
+      "birthday": "0000",
       "gender": "M"
     },
     "rels": { "parents": ["1", "2"] }
@@ -81,39 +81,39 @@
   {
     "id": "8",
     "data": {
-      "firstName": "Ethan",
-      "lastName": "Smith",
-      "birthday": "2008",
-      "gender": "M"
+      "firstName": "Onding",
+      "lastName": "Golero",
+      "birthday": "0000",
+      "gender": "F"
     },
     "rels": { "parents": ["1", "2"] }
   },
   {
     "id": "9",
     "data": {
-      "firstName": "Fiona",
-      "lastName": "Smith",
-      "birthday": "2010",
-      "gender": "F"
+      "firstName": "Baldo",
+      "lastName": "Golero",
+      "birthday": "0000",
+      "gender": "M"
     },
     "rels": { "parents": ["1", "2"] }
   },
   {
     "id": "10",
     "data": {
-      "firstName": "Grace",
-      "lastName": "Smith",
-      "birthday": "2012",
-      "gender": "F"
+      "firstName": "Rodolfo",
+      "lastName": "Golero",
+      "birthday": "0000",
+      "gender": "M"
     },
     "rels": { "parents": ["1", "2"] }
   },
   {
     "id": "11",
     "data": {
-      "firstName": "Henry",
-      "lastName": "Smith",
-      "birthday": "2015",
+      "firstName": "Sandy",
+      "lastName": "Golero",
+      "birthday": "0000",
       "gender": "M"
     },
     "rels": { "parents": ["1", "3"] }
@@ -121,9 +121,9 @@
   {
     "id": "12",
     "data": {
-      "firstName": "Ian",
-      "lastName": "Smith",
-      "birthday": "2017",
+      "firstName": "Jerry",
+      "lastName": "Golero",
+      "birthday": "0000",
       "gender": "M"
     },
     "rels": { "parents": ["1", "3"] }
@@ -131,9 +131,9 @@
   {
     "id": "13",
     "data": {
-      "firstName": "Julia",
-      "lastName": "Smith",
-      "birthday": "2019",
+      "firstName": "Norma",
+      "lastName": "Golero",
+      "birthday": "0000",
       "gender": "F"
     },
     "rels": { "parents": ["1", "3"] }

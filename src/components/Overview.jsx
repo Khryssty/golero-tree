@@ -15,7 +15,7 @@ export default function Overview() {
       </Heading>
 
       <Text fontSize="sm" color="gray.300" lineHeight="1.6">
-        This demo shows a fictional Smith family:
+        This demo shows a fictional Golero family:
       </Text>
 
       <List.Root
@@ -26,14 +26,14 @@ export default function Overview() {
         styleType="disc"
       >
         <List.Item>
-          One father: <strong>John Smith</strong>
+          One father: <strong>John Golero</strong>
         </List.Item>
         <List.Item>
-          First wife: <strong>Mary Smith</strong> — together they have{" "}
+          First wife: <strong>Mary Golero</strong> — together they have{" "}
           <strong>7 children</strong> (5 sons, 2 daughters).
         </List.Item>
         <List.Item>
-          Second wife: <strong>Laura Smith</strong> — together they have{" "}
+          Second wife: <strong>Laura Golero</strong> — together they have{" "}
           <strong>3 children</strong> (2 sons, 1 daughter).
         </List.Item>
       </List.Root>

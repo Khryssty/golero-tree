@@ -25,7 +25,7 @@ export default class FamilyTree extends React.Component {
         .setCardDisplay([["firstName", "lastName"]])
         .setCardDim({ h: 70 });
 
-      f3Chart.updateMainId("1"); // John Smith
+      f3Chart.updateMainId("1"); // Periano
 
 
 
