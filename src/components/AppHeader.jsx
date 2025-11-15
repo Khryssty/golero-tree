@@ -25,7 +25,7 @@ export default function AppHeader() {
             fontWeight="semibold"
             letterSpacing="-0.5px"
           >
-            The Smith Family Tree
+            The Golero Family Tree
           </Heading>
 
           <Text mt={1} fontSize="sm" color="gray.300">
