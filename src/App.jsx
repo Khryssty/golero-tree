@@ -1,5 +1,6 @@
-// src/App.jsx
 import { useState } from "react";
+import { Box, Flex, Grid, Heading, Text } from "@chakra-ui/react";
+
 import AppHeader from "./components/AppHeader.jsx";
 import TopPanel from "./components/TopPanel.jsx";
 import FamilyTreeChart from "./components/FamilyTreeChart.jsx";
@@ -10,34 +11,76 @@ export default function App() {
   const [selectedPerson, setSelectedPerson] = useState(null);
 
   return (
-    <div className="min-h-screen w-screen bg-slate-950 text-slate-100 flex flex-col">
+    <Flex
+      direction="column"
+      bg="gray.900"
+      color="gray.100"
+      minH="100vh"
+      w="100vw"
+    >
       <AppHeader />
 
-      <main className="flex-1 w-full">
-        <div className="w-full px-4 py-4 space-y-4">
-          <TopPanel />
-          <section className="space-y-3">
-            <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,2fr)_minmax(260px,1fr)] gap-4">
-              <div className="bg-slate-900/70 border border-slate-800 rounded-2xl p-2 sm:p-4 shadow-lg shadow-slate-950/40">
-                <h2 className="text-lg font-semibold mb-2 px-1">
-                  Interactive Family Tree
-                </h2>
-                <p className="text-xs text-slate-400 px-1 pb-2">
-                  Pan and zoom inside the tree. Click a person to inspect their
-                  details.
-                </p>
-                <div className="h-[80vh] rounded-xl border border-slate-800 overflow-hidden bg-slate-950">
-                  <FamilyTreeChart onSelectPerson={setSelectedPerson} />
-                </div>
-              </div>
+      {/* MAIN CONTENT AREA */}
+      <Flex
+        as="main"
+        direction="column"
+        flex="1"
+        w="100%"
+        px={4}
+        py={4}
+        gap={4}
+        overflow="hidden"
+      >
+        {/* Top Overview + Legend Row */}
+        <TopPanel />
 
-              <Sidebar selectedPerson={selectedPerson} />
-            </div>
-          </section>
-        </div>
-      </main>
+        {/* Tree + Sidebar Section */}
+        <Box w="100%">
+          <Grid
+            templateColumns={{ base: "1fr", lg: "2fr 1fr" }}
+            gap={4}
+            height="calc(100vh - 250px)" 
+            /* Full screen height minus header + top panels + footer */
+          >
+            {/* Chart Container */}
+            <Box
+              bg="rgba(15, 23, 42, 0.7)"
+              border="1px solid"
+              borderColor="gray.700"
+              rounded="2xl"
+              p={{ base: 2, sm: 4 }}
+              shadow="lg"
+              overflow="hidden"
+            >
+              <Heading size="md" mb={2}>
+                Interactive Family Tree
+              </Heading>
+
+              <Text fontSize="xs" color="gray.400" mb={2}>
+                Pan and zoom inside the tree. Click a person to inspect details.
+              </Text>
+
+              {/* CHART FILLS ENTIRE REMAINING HEIGHT */}
+              <Box
+                flex="1"
+                h="100%"
+                border="1px solid"
+                borderColor="gray.700"
+                rounded="xl"
+                overflow="hidden"
+                bg="gray.900"
+              >
+                <FamilyTreeChart onSelectPerson={setSelectedPerson} />
+              </Box>
+            </Box>
+
+            {/* Sidebar */}
+            <Sidebar selectedPerson={selectedPerson} />
+          </Grid>
+        </Box>
+      </Flex>
 
       <AppFooter />
-    </div>
+    </Flex>
   );
 }

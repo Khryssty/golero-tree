@@ -1,33 +1,60 @@
-
+import { Box, Flex, Text, Heading } from "@chakra-ui/react";
 
 export default function Legend() {
   return (
-    <div className="bg-slate-900/70 border border-slate-800 rounded-2xl p-3 flex flex-wrap items-center gap-4 text-xs text-slate-200">
-      <h2 className="text-sm font-semibold mr-2">Legend</h2>
+    <Box
+      bg="rgba(15, 23, 42, 0.7)" // slate-900/70
+      border="1px solid"
+      borderColor="gray.700"
+      rounded="2xl"
+      p={3}
+      fontSize="xs"
+      color="gray.200"
+      display="flex"
+      flexWrap="wrap"
+      alignItems="center"
+      gap={4}
+    >
+      <Heading
+        size="xs"
+        fontWeight="semibold"
+        marginRight={2}
+      >
+        Legend
+      </Heading>
 
-      <div className="flex items-center gap-2">
-        <span className="inline-block w-3 h-3 rounded-full bg-sky-500" />
-        <span>Male</span>
-      </div>
+      {/* Male */}
+      <Flex align="center" gap={2}>
+        <Box w="12px" h="12px" rounded="full" bg="blue.400" />
+        <Text>Male</Text>
+      </Flex>
 
-      <div className="flex items-center gap-2">
-        <span className="inline-block w-3 h-3 rounded-full bg-pink-400" />
-        <span>Female</span>
-      </div>
+      {/* Female */}
+      <Flex align="center" gap={2}>
+        <Box w="12px" h="12px" rounded="full" bg="pink.300" />
+        <Text>Female</Text>
+      </Flex>
 
-      <div className="flex items-center gap-2">
-        <span className="inline-block w-4 h-3 border-b-2 border-lime-400" />
-        <span>Child from First Marriage (John + Mary)</span>
-      </div>
+      {/* First Marriage */}
+      <Flex align="center" gap={2}>
+        <Box w="16px" h="12px" borderBottom="2px solid" borderColor="green.300" />
+        <Text>Child from First Marriage (John + Mary)</Text>
+      </Flex>
 
-      <div className="flex items-center gap-2">
-        <span className="inline-block w-4 h-3 border-b-2 border-purple-400" />
-        <span>Child from Second Marriage (John + Laura)</span>
-      </div>
+      {/* Second Marriage */}
+      <Flex align="center" gap={2}>
+        <Box w="16px" h="12px" borderBottom="2px solid" borderColor="purple.300" />
+        <Text>Child from Second Marriage (John + Laura)</Text>
+      </Flex>
 
-      <p className="text-[11px] text-slate-500 ml-auto">
+      {/* Tip */}
+      <Text
+        fontSize="0.7rem"
+        color="gray.500"
+        marginLeft="auto"
+      >
         Tip: Click any card to view full details in the sidebar.
-      </p>
-    </div>
+      </Text>
+    </Box>
   );
 }

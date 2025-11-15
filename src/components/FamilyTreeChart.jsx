@@ -1,47 +1,39 @@
-import { useEffect } from "react";
-import * as f3 from "family-chart";
+import Tree from "react-d3-tree";
+import PersonCard from "./PersonCard";
+import MarriageNode from "./MarriageNode";
+import { buildGenealogyTree } from "../utils/buildGenealogyTree";
 import familyData from "../data/familyData.json";
+import { useMemo } from "react";
 
 export default function FamilyTreeChart({ onSelectPerson }) {
-  useEffect(() => {
-    const containerId = "#family-chart";
-    const el = document.querySelector(containerId);
-
-    // Cleanup any previous SVG if component remounts
-    if (el) {
-      el.innerHTML = "";
-    }
-
-    // Create chart
-    const chart = f3.createChart(containerId, familyData);
-
-    const card = chart
-      .setCardHtml()
-      .setCardDisplay([["first name", "last name"], ["birthday"]]);
-
-    // Click handler on cards
-    card.setOnCardClick((e, d) => {
-      // d is TreeDatum; d.data should be the original node we provided
-      if (d && d.data) {
-        onSelectPerson(d.data);
-      }
-    });
-
-    chart.editTree().setFields(["first name", "last name", "birthday"]);
-    chart.updateTree({ initial: true });
-
-    return () => {
-      const cleanupEl = document.querySelector(containerId);
-      if (cleanupEl) cleanupEl.innerHTML = "";
-      onSelectPerson(null);
-    };
-  }, [onSelectPerson]);
+  const treeData = useMemo(
+    () => buildGenealogyTree(familyData),
+    []
+  );
 
   return (
-    <div
-      id="family-chart"
-      className="w-full h-full"
-      style={{ width: "100%", height: "100%" }}
-    />
+    <div style={{ width: "100%", height: "100%" }}>
+      <Tree
+        data={treeData}
+        orientation="vertical"
+        nodeSize={{ x: 200, y: 120 }}
+        separation={{ siblings: 1, nonSiblings: 2 }}
+        renderCustomNodeElement={({ nodeDatum }) => (
+          <foreignObject
+            width={200}
+            height={100}
+            x={-100}
+            y={-50}
+            onClick={() => onSelectPerson?.(nodeDatum)}
+          >
+            {nodeDatum.type === "marriage" ? (
+              <MarriageNode />
+            ) : (
+              <PersonCard node={nodeDatum} />
+            )}
+          </foreignObject>
+        )}
+      />
+    </div>
   );
 }

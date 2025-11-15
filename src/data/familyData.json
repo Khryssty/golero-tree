@@ -2,8 +2,8 @@
   {
     "id": "1",
     "data": {
-      "first name": "John",
-      "last name": "Smith",
+      "firstName": "John",
+      "lastName": "Smith",
       "birthday": "1975",
       "gender": "M"
     },
@@ -15,8 +15,8 @@
   {
     "id": "2",
     "data": {
-      "first name": "Mary",
-      "last name": "Smith",
+      "firstName": "Mary",
+      "lastName": "Smith",
       "birthday": "1977",
       "gender": "F"
     },
@@ -28,8 +28,8 @@
   {
     "id": "3",
     "data": {
-      "first name": "Laura",
-      "last name": "Smith",
+      "firstName": "Laura",
+      "lastName": "Smith",
       "birthday": "1980",
       "gender": "F"
     },
@@ -41,8 +41,8 @@
   {
     "id": "4",
     "data": {
-      "first name": "Alex",
-      "last name": "Smith",
+      "firstName": "Alex",
+      "lastName": "Smith",
       "birthday": "2000",
       "gender": "M"
     },
@@ -51,8 +51,8 @@
   {
     "id": "5",
     "data": {
-      "first name": "Ben",
-      "last name": "Smith",
+      "firstName": "Ben",
+      "lastName": "Smith",
       "birthday": "2002",
       "gender": "M"
     },
@@ -61,8 +61,8 @@
   {
     "id": "6",
     "data": {
-      "first name": "Chris",
-      "last name": "Smith",
+      "firstName": "Chris",
+      "lastName": "Smith",
       "birthday": "2004",
       "gender": "M"
     },
@@ -71,8 +71,8 @@
   {
     "id": "7",
     "data": {
-      "first name": "David",
-      "last name": "Smith",
+      "firstName": "David",
+      "lastName": "Smith",
       "birthday": "2006",
       "gender": "M"
     },
@@ -81,8 +81,8 @@
   {
     "id": "8",
     "data": {
-      "first name": "Ethan",
-      "last name": "Smith",
+      "firstName": "Ethan",
+      "lastName": "Smith",
       "birthday": "2008",
       "gender": "M"
     },
@@ -91,8 +91,8 @@
   {
     "id": "9",
     "data": {
-      "first name": "Fiona",
-      "last name": "Smith",
+      "firstName": "Fiona",
+      "lastName": "Smith",
       "birthday": "2010",
       "gender": "F"
     },
@@ -101,8 +101,8 @@
   {
     "id": "10",
     "data": {
-      "first name": "Grace",
-      "last name": "Smith",
+      "firstName": "Grace",
+      "lastName": "Smith",
       "birthday": "2012",
       "gender": "F"
     },
@@ -111,8 +111,8 @@
   {
     "id": "11",
     "data": {
-      "first name": "Henry",
-      "last name": "Smith",
+      "firstName": "Henry",
+      "lastName": "Smith",
       "birthday": "2015",
       "gender": "M"
     },
@@ -121,8 +121,8 @@
   {
     "id": "12",
     "data": {
-      "first name": "Ian",
-      "last name": "Smith",
+      "firstName": "Ian",
+      "lastName": "Smith",
       "birthday": "2017",
       "gender": "M"
     },
@@ -131,8 +131,8 @@
   {
     "id": "13",
     "data": {
-      "first name": "Julia",
-      "last name": "Smith",
+      "firstName": "Julia",
+      "lastName": "Smith",
       "birthday": "2019",
       "gender": "F"
     },

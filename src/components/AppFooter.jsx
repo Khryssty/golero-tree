@@ -1,12 +1,27 @@
-
+import { Box, Flex, Text } from "@chakra-ui/react";
 
 export default function AppFooter() {
   return (
-    <footer className="border-t border-slate-800 bg-slate-900/80">
-      <div className="w-full px-4 py-3 text-xs text-slate-400 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-        <span>Built with React, JSX &amp; family-chart.</span>
-        <span>Styling powered by Tailwind CSS.</span>
-      </div>
-    </footer>
+    <Box
+      as="footer"
+      borderTop="1px solid"
+      borderColor="gray.700"
+      bg="gray.900"
+      py={3}
+      px={4}
+    >
+      <Flex
+        direction={{ base: "column", sm: "row" }}
+        align={{ sm: "center" }}
+        justify="space-between"
+        gap={2}
+        fontSize="xs"
+        color="gray.400"
+        w="100%"
+      >
+        <Text>Built with React, JSX &amp; family-chart.</Text>
+        <Text>Styling powered by Chakra UI.</Text>
+      </Flex>
+    </Box>
   );
 }

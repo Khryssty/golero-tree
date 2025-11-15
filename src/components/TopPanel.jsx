@@ -1,18 +1,16 @@
+import { Grid } from "@chakra-ui/react";
 import Overview from "./Overview.jsx";
 import Legend from "./Legend.jsx";
 
 export default function TopPanel() {
   return (
-    <section
-      className="w-full gap-4"   // Tailwind still fine for spacing
-      style={{
-        display: "grid",
-        gridTemplateColumns: "1fr 1fr",
-        columnGap: "1rem",      // 16px gap
-      }}
+    <Grid
+      w="100%"
+      templateColumns={{ base: "1fr", md: "1fr 1fr" }}
+      gap={4}
     >
       <Overview />
       <Legend />
-    </section>
+    </Grid>
   );
 }

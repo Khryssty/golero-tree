@@ -1,25 +1,42 @@
-
+import { Box, Heading, Text, List } from "@chakra-ui/react";
 
 export default function Overview() {
   return (
-    <section className="bg-slate-900/70 border border-slate-800 rounded-2xl p-4 sm:p-6 shadow-lg shadow-slate-950/40">
-      <h2 className="text-lg font-semibold mb-2">Family Overview</h2>
-      <p className="text-sm text-slate-300 leading-relaxed">
+    <Box
+      bg="rgba(15, 23, 42, 0.7)"
+      border="1px solid"
+      borderColor="gray.700"
+      rounded="2xl"
+      p={{ base: 4, sm: 6 }}
+      shadow="lg"
+    >
+      <Heading size="md" mb={2}>
+        Family Overview
+      </Heading>
+
+      <Text fontSize="sm" color="gray.300" lineHeight="1.6">
         This demo shows a fictional Smith family:
-      </p>
-      <ul className="mt-2 text-sm text-slate-300 list-disc list-inside space-y-1">
-        <li>
+      </Text>
+
+      <List.Root
+        mt={2}
+        gap={1}
+        fontSize="sm"
+        color="gray.300"
+        styleType="disc"
+      >
+        <List.Item>
           One father: <strong>John Smith</strong>
-        </li>
-        <li>
+        </List.Item>
+        <List.Item>
           First wife: <strong>Mary Smith</strong> — together they have{" "}
           <strong>7 children</strong> (5 sons, 2 daughters).
-        </li>
-        <li>
+        </List.Item>
+        <List.Item>
           Second wife: <strong>Laura Smith</strong> — together they have{" "}
           <strong>3 children</strong> (2 sons, 1 daughter).
-        </li>
-      </ul>
-    </section>
+        </List.Item>
+      </List.Root>
+    </Box>
   );
 }

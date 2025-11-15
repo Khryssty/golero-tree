@@ -1,20 +1,54 @@
+import { Box, Flex, Heading, Text, Badge } from "@chakra-ui/react";
+
 export default function AppHeader() {
   return (
-    <header className="border-b border-slate-800 bg-slate-900/60 backdrop-blur">
-      <div className="w-full px-4 py-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
-        <div>
-          <h1 className="text-2xl font-semibold tracking-tight">
+    <Box
+      as="header"
+      borderBottom="1px solid"
+      borderColor="gray.700"
+      bg="rgba(17, 24, 39, 0.6)" // slate-900/60 equivalent
+      backdropFilter="blur(8px)"
+      w="100%"
+    >
+      <Flex
+        px={4}
+        py={4}
+        direction={{ base: "column", sm: "row" }}
+        align={{ sm: "center" }}
+        justify="space-between"
+        gap={3}
+        w="100%"
+      >
+        <Box>
+          <Heading
+            size="lg"
+            fontWeight="semibold"
+            letterSpacing="-0.5px"
+          >
             The Smith Family Tree
-          </h1>
-          <p className="text-sm text-slate-300">
+          </Heading>
+
+          <Text mt={1} fontSize="sm" color="gray.300">
             Two generations, multiple spouses, and 10 children — visualized with
             React and Family Chart.
-          </p>
-        </div>
-        <span className="text-xs uppercase tracking-wide bg-slate-800 px-3 py-1 rounded-full border border-slate-700">
-          Demo · Fake Data
-        </span>
-      </div>
-    </header>
+          </Text>
+        </Box>
+
+        <Badge
+          fontSize="0.65rem"
+          textTransform="uppercase"
+          letterSpacing="wide"
+          colorScheme="gray"
+          px={3}
+          py={1}
+          borderRadius="full"
+          border="1px solid"
+          borderColor="gray.600"
+          bg="gray.800"
+        >
+          About
+        </Badge>
+      </Flex>
+    </Box>
   );
 }
