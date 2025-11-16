@@ -32,7 +32,7 @@ export default function Legend() {
       </Flex>
 
       {/* First Marriage */}
-      <Flex align="center" gap={2}>
+      {/* <Flex align="center" gap={2}>
         <Box
           w="16px"
           h="12px"
@@ -40,10 +40,10 @@ export default function Legend() {
           borderColor="green.300"
         />
         <Text>Child from First Marriage</Text>
-      </Flex>
+      </Flex> */}
 
       {/* Second Marriage */}
-      <Flex align="center" gap={2}>
+      {/* <Flex align="center" gap={2}>
         <Box
           w="16px"
           h="12px"
@@ -51,7 +51,7 @@ export default function Legend() {
           borderColor="purple.300"
         />
         <Text>Child from Second Marriage</Text>
-      </Flex>
+      </Flex> */}
     </Box>
   );
 }

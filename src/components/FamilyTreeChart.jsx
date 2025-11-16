@@ -42,7 +42,7 @@ export default class FamilyTree extends React.Component {
 
       d3.select(document.querySelector("#FamilyChart"))
         .append("button")
-        .text("Random Person")
+        .text("Show Random Person")
         .attr(
           "style",
           "position: absolute; top: 10px; right: 10px; z-index: 1000;"
@@ -82,7 +82,7 @@ export default class FamilyTree extends React.Component {
 
       const search_input = search_cont
         .append("input")
-        .style("width", "100%")
+        .style("width", "200%")
         .style("padding", "8px 10px")
         .style("border-radius", "10px")
         .style("border", "1px solid #aaa")
@@ -92,7 +92,7 @@ export default class FamilyTree extends React.Component {
         .style("outline", "none")
         .style("box-shadow", "0 2px 6px rgba(0,0,0,0.2)")
         .attr("type", "text")
-        .attr("placeholder", "Search")
+        .attr("placeholder", "Type a name or select from the list...")
         .on("focus", activateDropdown)
         .on("input", activateDropdown);
 
@@ -103,13 +103,13 @@ export default class FamilyTree extends React.Component {
           `
       overflow-y: auto;
       max-height: 300px;
-      background: #faf8f3;               /* light warm dirty white */
+      background: #faf8f3;              
       border-radius: 10px;
       padding: 6px 0;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.25);  /* soft shadow */
+      box-shadow: 0 4px 14px rgba(0,0,0,0.25);  
       border: 1px solid #cfcfcf;
       position: absolute;
-      width: 100%;
+      width: 200%;
       z-index: 2000;
       outline: none;
       display: none;
@@ -129,26 +129,28 @@ export default class FamilyTree extends React.Component {
         updateDropdown(filtered_options);
       }
 
-function updateDropdown(filtered_options) {
-  dropdown
-    .selectAll("div")
-    .data(filtered_options)
-    .join("div")
-    .attr("style", `padding: 8px 12px; cursor: pointer; border-bottom: 1px solid #e3e3e3;`)
-    .text(d => d.label)
-    .on("click", (e, d) => {
-      updateTreeWithNewMainPerson(d.value, true);
-      dropdown.style("display", "none");   // hide after select
-    });
+      function updateDropdown(filtered_options) {
+        dropdown
+          .selectAll("div")
+          .data(filtered_options)
+          .join("div")
+          .attr(
+            "style",
+            `padding: 8px 12px; cursor: pointer; border-bottom: 1px solid #e3e3e3;`
+          )
+          .text((d) => d.label)
+          .on("click", (e, d) => {
+            updateTreeWithNewMainPerson(d.value, true);
+            dropdown.style("display", "none"); // hide after select
+          });
 
-  // Hide if no results
-  if (filtered_options.length === 0) {
-    dropdown.style("display", "none");
-  }
-}
+        // Hide if no results
+        if (filtered_options.length === 0) {
+          dropdown.style("display", "none");
+        }
+      }
     }
   }
-
 
   render() {
     return (

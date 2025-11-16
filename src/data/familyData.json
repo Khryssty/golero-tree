@@ -106,7 +106,23 @@
       "birthday": "0000",
       "gender": "M"
     },
-    "rels": { "parents": ["1", "2"], "spouses": ["14"] ,"children": ["15", "16"] }
+    "rels": {
+      "parents": ["1", "2"],
+      "spouses": ["14"],
+      "children": [
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25"
+      ]
+    }
   },
   {
     "id": "11",
@@ -148,7 +164,19 @@
     },
     "rels": {
       "spouses": ["10"],
-      "children": ["15", "16"]
+      "children": [
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25"
+      ]
     }
   },
   {
@@ -159,7 +187,11 @@
       "birthday": "1951",
       "gender": "F"
     },
-    "rels": { "parents": ["10", "14"] }
+    "rels": {
+      "parents": ["10", "14"],
+      "spouses": ["26"],
+      "children": ["27", "28", "29", "30", "31", "32", "33"]
+    }
   },
   {
     "id": "16",
@@ -169,6 +201,452 @@
       "birthday": "1952",
       "gender": "M"
     },
-    "rels": { "parents": ["10", "14"] }
+    "rels": {
+      "parents": ["10", "14"],
+      "spouses": ["35"],
+      "children": ["36", "37"]
+    }
+  },
+  {
+    "id": "17",
+    "data": {
+      "firstName": "Nita",
+      "lastName": "Golero",
+      "birthday": "0000",
+      "gender": "F"
+    },
+    "rels": {
+      "parents": ["10", "14"],
+      "children": ["34"]
+    }
+  },
+  {
+    "id": "18",
+    "data": {
+      "firstName": "Jose Mari",
+      "lastName": "Golero",
+      "birthday": "0000",
+      "gender": "M"
+    },
+    "rels": {
+      "parents": ["10", "14"]
+    }
+  },
+  {
+    "id": "19",
+    "data": {
+      "firstName": "Victor",
+      "lastName": "Golero",
+      "birthday": "0000",
+      "gender": "M"
+    },
+    "rels": {
+      "parents": ["10", "14"]
+    }
+  },
+  {
+    "id": "20",
+    "data": {
+      "firstName": "Raphael",
+      "lastName": "Golero",
+      "birthday": "0000",
+      "gender": "M"
+    },
+    "rels": {
+      "parents": ["10", "14"],
+      "spouses": ["38"],
+      "children": ["39", "40"]
+    }
+  },
+  {
+    "id": "21",
+    "data": {
+      "firstName": "Sonia",
+      "lastName": "Golero",
+      "birthday": "0000",
+      "gender": "F"
+    },
+    "rels": {
+      "parents": ["10", "14"]
+    }
+  },
+  {
+    "id": "22",
+    "data": {
+      "firstName": "Antonio",
+      "lastName": "Golero",
+      "birthday": "0000",
+      "gender": "M"
+    },
+    "rels": {
+      "parents": ["10", "14"]
+    }
+  },
+  {
+    "id": "23",
+    "data": {
+      "firstName": "Dolores",
+      "lastName": "Golero",
+      "birthday": "0000",
+      "gender": "F"
+    },
+    "rels": {
+      "parents": ["10", "14"]
+    }
+  },
+  {
+    "id": "24",
+    "data": {
+      "firstName": "Romeo",
+      "lastName": "Golero",
+      "birthday": "0000",
+      "gender": "M"
+    },
+    "rels": {
+      "parents": ["10", "14"]
+    }
+  },
+  {
+    "id": "25",
+    "data": {
+      "firstName": "Marivic",
+      "lastName": "Golero",
+      "birthday": "0000",
+      "gender": "F"
+    },
+    "rels": {
+      "parents": ["10", "14"]
+    }
+  },
+  {
+    "id": "26",
+    "data": {
+      "firstName": "Virgilio",
+      "lastName": "Gumban",
+      "birthday": "1946",
+      "gender": "M"
+    },
+    "rels": {
+      "spouses": ["15"],
+      "children": ["27", "28", "29", "30", "31", "32", "33"]
+    }
+  },
+  {
+    "id": "27",
+    "data": {
+      "firstName": "David",
+      "lastName": "Gumban",
+      "birthday": "1975",
+      "gender": "M"
+    },
+    "rels": {
+      "parents": ["26", "15"],
+      "spouses": ["41", "54"],
+      "children": ["42", "43", "53"]
+    }
+  },
+  {
+    "id": "28",
+    "data": {
+      "firstName": "Steve",
+      "lastName": "Gumban",
+      "birthday": "1977",
+      "gender": "M"
+    },
+    "rels": { "parents": ["26", "15"] }
+  },
+  {
+    "id": "29",
+    "data": {
+      "firstName": "Mark",
+      "lastName": "Gumban",
+      "birthday": "1979",
+      "gender": "M"
+    },
+    "rels": { "parents": ["26", "15"] }
+  },
+  {
+    "id": "30",
+    "data": {
+      "firstName": "Christy",
+      "lastName": "Gumban",
+      "birthday": "1981",
+      "gender": "F"
+    },
+    "rels": {
+      "parents": ["26", "15"],
+      "spouses": ["44"],
+      "children": ["45"]
+    }
+  },
+  {
+    "id": "31",
+    "data": {
+      "firstName": "Rocky",
+      "lastName": "Gumban",
+      "birthday": "1984",
+      "gender": "M"
+    },
+    "rels": {
+      "parents": ["26", "15"],
+      "spouses": ["47"],
+      "children": ["48", "49"]
+    }
+  },
+  {
+    "id": "32",
+    "data": {
+      "firstName": "Leo",
+      "lastName": "Gumban",
+      "birthday": "1989",
+      "gender": "M"
+    },
+    "rels": { "parents": ["26", "15"], "spouses": ["50"] }
+  },
+  {
+    "id": "33",
+    "data": {
+      "firstName": "Mae",
+      "lastName": "Gumban",
+      "birthday": "1992",
+      "gender": "F"
+    },
+    "rels": { "parents": ["26", "15"], "spouses": ["51"], "children": ["52"] }
+  },
+  {
+    "id": "35",
+    "data": {
+      "firstName": "Imelda",
+      "lastName": "",
+      "birthday": "0000",
+      "gender": "F"
+    },
+    "rels": { "spouses": ["16"], "children": ["36", "37"] }
+  },
+  {
+    "id": "36",
+    "data": {
+      "firstName": "Dexter",
+      "lastName": "Golero",
+      "birthday": "1981",
+      "gender": "M"
+    },
+    "rels": { "parents": ["16", "35"] }
+  },
+  {
+    "id": "37",
+    "data": {
+      "firstName": "Mary Grace",
+      "lastName": "Golero",
+      "birthday": "0000",
+      "gender": "F"
+    },
+    "rels": { "parents": ["16", "35"] }
+  },
+  {
+    "id": "34",
+    "data": {
+      "firstName": "Lorenzo",
+      "lastName": "Golero",
+      "birthday": "0000",
+      "gender": "M"
+    },
+    "rels": {
+      "parents": ["17"]
+    }
+  },
+  {
+    "id": "38",
+    "data": {
+      "firstName": "Rosalie",
+      "lastName": "",
+      "birthday": "0000",
+      "gender": "F"
+    },
+    "rels": { "spouses": ["20"] }
+  },
+  {
+    "id": "39",
+    "data": {
+      "firstName": "Rossel",
+      "lastName": "Golero",
+      "birthday": "0000",
+      "gender": "F"
+    },
+    "rels": { "parents": ["20", "38"] }
+  },
+  {
+    "id": "40",
+    "data": {
+      "firstName": "Hensel",
+      "lastName": "Golero",
+      "birthday": "0000",
+      "gender": "M"
+    },
+    "rels": { "parents": ["20", "38"] }
+  },
+  {
+    "id": "41",
+    "data": {
+      "firstName": "Amy",
+      "lastName": "",
+      "birthday": "0000",
+      "gender": "F"
+    },
+    "rels": { "spouses": ["27"], "children": ["42", "43"] }
+  },
+  {
+    "id": "42",
+    "data": {
+      "firstName": "Joshua",
+      "lastName": "Gumban",
+      "birthday": "1998",
+      "gender": "M"
+    },
+    "rels": { "parents": ["27", "41"] }
+  },
+  {
+    "id": "43",
+    "data": {
+      "firstName": "Shiela Mae",
+      "lastName": "Gumban",
+      "birthday": "2008",
+      "gender": "F"
+    },
+    "rels": { "parents": ["27", "41"] }
+  },
+  {
+    "id": "44",
+    "data": {
+      "firstName": "Marcus",
+      "lastName": "Grothues",
+      "birthday": "1969",
+      "gender": "M"
+    },
+    "rels": { "spouses": ["30", "55"], "children": ["45", "46"] }
+  },
+  {
+    "id": "45",
+    "data": {
+      "firstName": "Vincent",
+      "lastName": "Grothues",
+      "birthday": "2015",
+      "gender": "M"
+    },
+    "rels": { "parents": ["30", "44"] }
+  },
+  {
+    "id": "46",
+    "data": {
+      "firstName": "Mya",
+      "lastName": "Grothues",
+      "birthday": "2003",
+      "gender": "F"
+    },
+    "rels": { "parents": ["44", "55"] }
+  },
+  {
+    "id": "47",
+    "data": {
+      "firstName": "Aubrey",
+      "lastName": "Bigay",
+      "birthday": "0000",
+      "gender": "F"
+    },
+    "rels": {
+      "spouses": ["31"],
+      "children": ["48", "49"]
+    }
+  },
+  {
+    "id": "48",
+    "data": {
+      "firstName": "Mica",
+      "lastName": "Gumban",
+      "birthday": "2006",
+      "gender": "F"
+    },
+    "rels": {
+      "parents": ["31", "47"]
+    }
+  },
+  {
+    "id": "49",
+    "data": {
+      "firstName": "Alonzo",
+      "lastName": "Gumban",
+      "birthday": "2022",
+      "gender": "M"
+    },
+    "rels": {
+      "parents": ["31", "47"]
+    }
+  },
+  {
+    "id": "50",
+    "data": {
+      "firstName": "Ruth",
+      "lastName": "Potestad",
+      "birthday": "0000",
+      "gender": "F"
+    },
+    "rels": {
+      "spouses": ["32"]
+    }
+  },
+  {
+    "id": "51",
+    "data": {
+      "firstName": "Kevin",
+      "lastName": "Morden",
+      "birthday": "0000",
+      "gender": "M"
+    },
+    "rels": {
+      "spouses": ["33"],
+      "children": ["52"]
+    }
+  },
+  {
+    "id": "52",
+    "data": {
+      "firstName": "Olivia",
+      "lastName": "Morden",
+      "birthday": "2023",
+      "gender": "F"
+    },
+    "rels": {
+      "parents": ["32", "51"]
+    }
+  },
+  {
+    "id": "53",
+    "data": {
+      "firstName": "Nina",
+      "lastName": "",
+      "birthday": "0000",
+      "gender": "F"
+    },
+    "rels": { "parents": ["27", "54"] }
+  },
+  {
+    "id": "54",
+    "data": {
+      "firstName": "Mary Jane",
+      "lastName": "",
+      "birthday": "0000",
+      "gender": "F"
+    },
+    "rels": { "spouses": ["27"], "children": ["53"] }
+  },
+  {
+    "id": "55",
+    "data": {
+      "firstName": "Mylyn",
+      "lastName": "Cunan",
+      "birthday": "0000",
+      "gender": "F"
+    },
+    "rels": { "spouses": ["44"], "children": ["46"] }
   }
 ]
