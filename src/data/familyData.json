@@ -376,7 +376,7 @@
     "rels": {
       "parents": ["26", "15"],
       "spouses": ["44"],
-      "children": ["45"]
+      "children": ["45", "46"]
     }
   },
   {
@@ -523,7 +523,7 @@
       "birthday": "1969",
       "gender": "M"
     },
-    "rels": { "spouses": ["30", "55"], "children": ["45", "46"] }
+    "rels": { "spouses": ["30"], "children": ["45", "46"] }
   },
   {
     "id": "45",
@@ -543,7 +543,7 @@
       "birthday": "2003",
       "gender": "F"
     },
-    "rels": { "parents": ["44", "55"] }
+    "rels": { "parents": ["30", "44"] }
   },
   {
     "id": "47",
@@ -638,15 +638,5 @@
       "gender": "F"
     },
     "rels": { "spouses": ["27"], "children": ["53"] }
-  },
-  {
-    "id": "55",
-    "data": {
-      "firstName": "Mylyn",
-      "lastName": "Cunan",
-      "birthday": "0000",
-      "gender": "F"
-    },
-    "rels": { "spouses": ["44"], "children": ["46"] }
   }
 ]
