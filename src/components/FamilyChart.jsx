@@ -4,24 +4,17 @@ import "family-chart/styles/family-chart.css";
 
 export default function FamilyChart({ data, chartRef }) {
   useEffect(() => {
-    if (!chartRef || !chartRef.current) {
-      console.log("FamilyChart effect: chartRef not ready", chartRef);
-      return;
-    }
+    if (!chartRef || !chartRef.current) return;
 
     const container = chartRef.current;
-    console.log("FamilyChart effect: running, container =", container);
 
-    // Remove ONLY previous f3 content if any
+    // Remove previous chart inside container
     const old = container.querySelector(".f3-tree-container");
-    if (old) {
-      console.log("FamilyChart effect: removing old chart");
-      old.remove();
-    }
+    if (old) old.remove();
 
-    // IMPORTANT: use the DOM element, not "#FamilyChart" selector
+    // ⭐ IMPORTANT: Force mount using selector string so chart renders in the correct container
     const chart = f3
-      .createChart(container, data)
+      .createChart(`#${container.id}`, data)
       .setTransitionTime(800)
       .setCardXSpacing(250)
       .setCardYSpacing(150);
@@ -34,9 +27,91 @@ export default function FamilyChart({ data, chartRef }) {
     chart.updateMainId("1");
     chart.updateTree({ initial: true });
 
-    // Expose chart instance for SearchBox & Random button
+    // Expose chart instance
     chartRef.current.f3Chart = chart;
-    console.log("FamilyChart effect: chart created and attached");
+
+    // ⭐ Get tooltip element
+    const tooltip = document.getElementById("FamilyTooltip");
+    if (!tooltip) {
+      console.warn("Tooltip element #FamilyTooltip not found.");
+      return;
+    }
+
+    // Tooltip behavior
+    const showTooltip = (event, person) => {
+      tooltip.innerHTML = `
+        <strong>${person.data.firstName} ${person.data.lastName}</strong><br/>
+        DOB: ${person.data.birthday || "N/A"}<br/>
+      `;
+      tooltip.style.visibility = "visible";
+      tooltip.style.opacity = "1";
+    };
+
+    const moveTooltip = (event) => {
+      tooltip.style.top = event.clientY + 12 + "px";
+      tooltip.style.left = event.clientX + 12 + "px";
+    };
+
+    const hideTooltip = () => {
+      tooltip.style.visibility = "hidden";
+      tooltip.style.opacity = "0";
+    };
+
+    // ⭐ Attach hover events to dynamically rendered cards
+    const attachHoverEvents = () => {
+      console.log("ATTACH HOVER EVENTS RUNNING!");
+
+      // Correct selector for cards
+      const cards = container.querySelectorAll(".card-label");
+      console.log("Found cards:", cards.length, cards);
+
+      cards.forEach((card) => {
+        // Find person ID from closest node group
+        const parent = card.closest("[data-id]");
+        if (!parent) {
+          console.log("No parent [data-id] for card:", card);
+          return;
+        }
+
+        const pid = parent.getAttribute("data-id");
+        const person = data.find((p) => p.id === pid);
+        if (!person) {
+          console.log("No matching person for id:", pid);
+          return;
+        }
+
+        // Hover events
+        card.addEventListener("mouseenter", (e) => {
+          console.log("HOVER:", person.data.firstName);
+          card.classList.add("hover-highlight");
+          showTooltip(e, person);
+        });
+
+        card.addEventListener("mousemove", moveTooltip);
+
+        card.addEventListener("mouseleave", () => {
+          card.classList.remove("hover-highlight");
+          hideTooltip();
+        });
+      });
+    };
+
+    // ⭐ Ensure F3 finished rendering before attaching events
+    let attempts = 0;
+    const interval = setInterval(() => {
+      console.log("Checking for cards (attempt):", attempts);
+
+      const cards = container.querySelectorAll(".card-label");
+
+      if (cards.length > 0 || attempts > 20) {
+        clearInterval(interval);
+        attachHoverEvents();
+      }
+
+      attempts++;
+    }, 200);
+
+    return () => clearInterval(interval);
 
   }, [data, chartRef]);
 

@@ -3,6 +3,7 @@ import { Box, Flex } from "@chakra-ui/react";
 import FamilyChart from "./FamilyChart";
 import SearchBox from "./SearchBox";
 import RandomPersonButton from "./RandomPersonButton";
+import FamilyTooltip from "./FamilyTooltip";
 import familyData from "../data/familyData.json";
 
 export default function FamilyTree() {
@@ -64,7 +65,7 @@ export default function FamilyTree() {
           //    pointerEvents="auto"
         />
       </Flex>
-
+      <FamilyTooltip />
       <FamilyChart data={familyData} chartRef={chartRef} />
     </Box>
   );

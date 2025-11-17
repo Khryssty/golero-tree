@@ -76,9 +76,13 @@ body,
   transform-origin: center center;
 }
 
-
-
-
+/* Highlight card on hover */
+.card-label.hover-highlight {
+  filter: drop-shadow(0 0 16px rgba(240, 229, 229, 0));
+  transform: scale(1.05);
+  transition: transform 0.1s ease, filter 0.1s ease;
+  cursor: pointer;
+}
 
 /* Light theme */
 @media (prefers-color-scheme: light) {
