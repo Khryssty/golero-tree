@@ -28,15 +28,15 @@ export default function FamilyTree() {
       <Box
         id="FamilyChart"
         ref={chartRef}
-        className="f3" // IMPORTANT for family-chart CSS
+        className="f3" // IMPORTANT for FamilyChart CSS
         width="100%"
         height="100%"
         position="absolute"
         top="0"
         left="0"
         zIndex={1}
-        bg="black.500" // Make it obvious if it's rendering
-        pointerEvents="none"
+        pointerEvents={"none"}
+        bg="blackAlpha.600" // Make it obvious if it's rendering
       />
 
       {/* Controls overlay */}
@@ -49,18 +49,19 @@ export default function FamilyTree() {
         direction={isMobile ? "column" : "row"}
         gap="10px"
         zIndex={2}
+        //     pointerEvents="none"
       >
         <SearchBox
           data={familyData}
           chartRef={chartRef}
           isMobile={isMobile}
-          pointerEvents="auto"
+          //    pointerEvents="auto"
         />
         <RandomPersonButton
           data={familyData}
           chartRef={chartRef}
           isMobile={isMobile}
-          pointerEvents="auto"
+          //    pointerEvents="auto"
         />
       </Flex>
 
