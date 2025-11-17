@@ -1,20 +1,20 @@
-name: Auto Deploy to gh-pages
+name: Deploy to gh-pages
 
 on:
   push:
-    branches: [ "main" ]   # Trigger deploy when main is updated
+    branches: [ "main" ]
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Set up Node
+      - name: Install Node
         uses: actions/setup-node@v4
         with:
           node-version: 18
@@ -23,11 +23,11 @@ jobs:
         run: npm install
 
       - name: Build project
-        run: npm run build       # Your build command
+        run: npm run build
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist     # change to your final build folder
           publish_branch: gh-pages
+          publish_dir: ./dist
