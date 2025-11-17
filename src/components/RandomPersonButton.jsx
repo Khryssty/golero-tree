@@ -4,7 +4,7 @@ export default function RandomPersonButton({ data, chartRef, isMobile }) {
   const handleClick = () => {
     const chart = chartRef.current?.f3Chart;
     if (!chart) {
-      console.warn("RandomPersonButton: chart not ready yet");
+     // console.warn("RandomPersonButton: chart not ready yet");
       return;
     }
 

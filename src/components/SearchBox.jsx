@@ -21,7 +21,7 @@ export default function SearchBox({ data, chartRef, isMobile }) {
 const handleSelect = (id) => {
   const chart = chartRef.current?.f3Chart;
   if (!chart) {
-    console.warn("SearchBox: chart not ready yet");
+   // console.warn("SearchBox: chart not ready yet");
     return;
   }
   chart.updateMainId(id);
