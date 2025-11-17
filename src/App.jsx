@@ -2,8 +2,7 @@ import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 
 import AppHeader from "./components/AppHeader.jsx";
 import Legend from "./components/Legend.jsx";
-import FamilyTreeChart from "./components/FamilyTreeChart.jsx";
-
+import FamilyTree from "./components/FamilyTree.jsx";
 import AppFooter from "./components/AppFooter.jsx";
 
 export default function App() {
@@ -63,7 +62,7 @@ export default function App() {
               overflow="hidden"
               bg="gray.900"
             >
-              <FamilyTreeChart />
+              <FamilyTree />
             </Box>
           </Box>
         </Box>

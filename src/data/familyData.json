@@ -5,7 +5,8 @@
       "firstName": "Periano",
       "lastName": "Golero",
       "birthday": "0000",
-      "gender": "M"
+      "gender": "M",
+      "description": "The patriarch of the Golero family."
     },
     "rels": {
       "spouses": ["2", "3"],
@@ -18,7 +19,8 @@
       "firstName": "Bebang",
       "lastName": "Golero",
       "birthday": "0000",
-      "gender": "F"
+      "gender": "F",
+      "description": "The matriarch of the Golero family."
     },
     "rels": {
       "spouses": ["1"],
@@ -31,7 +33,8 @@
       "firstName": "Esther",
       "lastName": "Golero",
       "birthday": "0000",
-      "gender": "F"
+      "gender": "F",
+      "description": "The second wife of Periano Golero."
     },
     "rels": {
       "spouses": ["1"],
@@ -44,7 +47,8 @@
       "firstName": "Mameng",
       "lastName": "Golero",
       "birthday": "0000",
-      "gender": "F"
+      "gender": "F",
+      "description": "The eldest child of Periano and Bebang Golero. Stayed in Bacolod City, Negros Occidental."
     },
     "rels": { "parents": ["1", "2"] }
   },
@@ -54,7 +58,8 @@
       "firstName": "Ando",
       "lastName": "Golero",
       "birthday": "0000",
-      "gender": "M"
+      "gender": "M",
+      "description": "Died young and single. Said to have anting2x and ordered to pickup Lolo Cadjo from jail."
     },
     "rels": { "parents": ["1", "2"] }
   },
@@ -64,7 +69,8 @@
       "firstName": "Pede",
       "lastName": "Golero",
       "birthday": "0000",
-      "gender": "M"
+      "gender": "M",
+      "description": "Manager of Locsin-Consing Enterprise Corporation."
     },
     "rels": { "parents": ["1", "2"] }
   },
@@ -74,7 +80,8 @@
       "firstName": "Cadjo",
       "lastName": "Golero",
       "birthday": "0000",
-      "gender": "M"
+      "gender": "M",
+      "description": "Personal driver of Serafin Tupas."
     },
     "rels": { "parents": ["1", "2"] }
   },
@@ -198,7 +205,7 @@
     "data": {
       "firstName": "Rolando",
       "lastName": "Golero",
-      "birthday": "1952",
+      "birthday": "1953",
       "gender": "M"
     },
     "rels": {
@@ -210,9 +217,9 @@
   {
     "id": "17",
     "data": {
-      "firstName": "Nita",
+      "firstName": "Nenita",
       "lastName": "Golero",
-      "birthday": "0000",
+      "birthday": "1954",
       "gender": "F"
     },
     "rels": {
@@ -223,13 +230,15 @@
   {
     "id": "18",
     "data": {
-      "firstName": "Jose Mari",
+      "firstName": "Jose Maria",
       "lastName": "Golero",
-      "birthday": "0000",
+      "birthday": "1956",
       "gender": "M"
     },
     "rels": {
-      "parents": ["10", "14"]
+      "parents": ["10", "14"],
+      "spouses": ["55"],
+      "children": ["56", "57", "58", "59", "60"]
     }
   },
   {
@@ -237,7 +246,7 @@
     "data": {
       "firstName": "Victor",
       "lastName": "Golero",
-      "birthday": "0000",
+      "birthday": "1958",
       "gender": "M"
     },
     "rels": {
@@ -247,9 +256,9 @@
   {
     "id": "20",
     "data": {
-      "firstName": "Raphael",
+      "firstName": "Rafael",
       "lastName": "Golero",
-      "birthday": "0000",
+      "birthday": "1960",
       "gender": "M"
     },
     "rels": {
@@ -259,51 +268,59 @@
     }
   },
   {
-    "id": "21",
+    "id": "22",
     "data": {
       "firstName": "Sonia",
       "lastName": "Golero",
-      "birthday": "0000",
+      "birthday": "1963",
       "gender": "F"
     },
     "rels": {
-      "parents": ["10", "14"]
+      "parents": ["10", "14"],
+      "spouses": ["66"],
+      "children": ["67"]
     }
   },
   {
-    "id": "22",
+    "id": "21",
     "data": {
       "firstName": "Antonio",
       "lastName": "Golero",
-      "birthday": "0000",
+      "birthday": "1961",
       "gender": "M"
     },
     "rels": {
-      "parents": ["10", "14"]
-    }
-  },
-  {
-    "id": "23",
-    "data": {
-      "firstName": "Dolores",
-      "lastName": "Golero",
-      "birthday": "0000",
-      "gender": "F"
-    },
-    "rels": {
-      "parents": ["10", "14"]
+      "parents": ["10", "14"],
+      "spouses": ["61"],
+      "children": ["62", "63", "64", "65"]
     }
   },
   {
     "id": "24",
     "data": {
+      "firstName": "Ma. Dolores",
+      "lastName": "Golero",
+      "birthday": "1968",
+      "gender": "F"
+    },
+    "rels": {
+      "parents": ["10", "14"],
+      "spouses": ["74"],
+      "children": ["75", "76", "77", "78", "79"]
+    }
+  },
+  {
+    "id": "23",
+    "data": {
       "firstName": "Romeo",
       "lastName": "Golero",
-      "birthday": "0000",
+      "birthday": "1966",
       "gender": "M"
     },
     "rels": {
-      "parents": ["10", "14"]
+      "parents": ["10", "14"],
+      "spouses": ["70"],
+      "children": ["71", "72", "73"]
     }
   },
   {
@@ -311,11 +328,13 @@
     "data": {
       "firstName": "Marivic",
       "lastName": "Golero",
-      "birthday": "0000",
+      "birthday": "1972",
       "gender": "F"
     },
     "rels": {
-      "parents": ["10", "14"]
+      "parents": ["10", "14"],
+      "spouses": ["80"],
+      "children": ["81"]
     }
   },
   {
@@ -376,7 +395,7 @@
     "rels": {
       "parents": ["26", "15"],
       "spouses": ["44"],
-      "children": ["45"]
+      "children": ["45", "46"]
     }
   },
   {
@@ -438,7 +457,7 @@
     "data": {
       "firstName": "Mary Grace",
       "lastName": "Golero",
-      "birthday": "0000",
+      "birthday": "1987",
       "gender": "F"
     },
     "rels": { "parents": ["16", "35"] }
@@ -470,7 +489,7 @@
     "data": {
       "firstName": "Rossel",
       "lastName": "Golero",
-      "birthday": "0000",
+      "birthday": "1993",
       "gender": "F"
     },
     "rels": { "parents": ["20", "38"] }
@@ -478,9 +497,9 @@
   {
     "id": "40",
     "data": {
-      "firstName": "Hensel",
+      "firstName": "Henzel",
       "lastName": "Golero",
-      "birthday": "0000",
+      "birthday": "2002",
       "gender": "M"
     },
     "rels": { "parents": ["20", "38"] }
@@ -523,7 +542,7 @@
       "birthday": "1969",
       "gender": "M"
     },
-    "rels": { "spouses": ["30", "55"], "children": ["45", "46"] }
+    "rels": { "spouses": ["30"], "children": ["45", "46"] }
   },
   {
     "id": "45",
@@ -543,7 +562,7 @@
       "birthday": "2003",
       "gender": "F"
     },
-    "rels": { "parents": ["44", "55"] }
+    "rels": { "parents": ["30", "44"] }
   },
   {
     "id": "47",
@@ -642,11 +661,322 @@
   {
     "id": "55",
     "data": {
-      "firstName": "Mylyn",
-      "lastName": "Cunan",
+      "firstName": "Wife of Jose Maria",
+      "lastName": "",
+      "birthday": "",
+      "gender": "F"
+    },
+    "rels": { "spouses": ["18"], "children": ["56", "57", "58", "59", "60"] }
+  },
+  {
+    "id": "56",
+    "data": {
+      "firstName": "Arlon",
+      "lastName": "Golero",
+      "birthday": "1975",
+      "gender": "M"
+    },
+    "rels": { "parents": ["18", "55"] }
+  },
+  {
+    "id": "57",
+    "data": {
+      "firstName": "Marijoe",
+      "lastName": "Golero",
+      "birthday": "1976",
+      "gender": "F"
+    },
+    "rels": { "parents": ["18", "55"] }
+  },
+  {
+    "id": "58",
+    "data": {
+      "firstName": "Marjorie",
+      "lastName": "Golero",
+      "birthday": "1978",
+      "gender": "F"
+    },
+    "rels": { "parents": ["18", "55"] }
+  },
+  {
+    "id": "59",
+    "data": {
+      "firstName": "Barry",
+      "lastName": "Golero",
+      "birthday": "1981",
+      "gender": "M"
+    },
+    "rels": { "parents": ["18", "55"] }
+  },
+  {
+    "id": "60",
+    "data": {
+      "firstName": "Cyrel",
+      "lastName": "Golero",
+      "birthday": "1982",
+      "gender": "M"
+    },
+    "rels": { "parents": ["18", "55"] }
+  },
+  {
+    "id": "61",
+    "data": {
+      "firstName": "Marilyn",
+      "lastName": "Castro",
       "birthday": "0000",
       "gender": "F"
     },
-    "rels": { "spouses": ["44"], "children": ["46"] }
+    "rels": { "spouses": ["21"], "children": ["62", "63", "64", "65"] }
+  },
+  {
+    "id": "62",
+    "data": {
+      "firstName": "Ma. Antoniette G.",
+      "lastName": "Golero",
+      "birthday": "2000",
+      "gender": "F"
+    },
+    "rels": { "parents": ["21", "61"], "spouses": ["82"], "children": ["83"] }
+  },
+  {
+    "id": "63",
+    "data": {
+      "firstName": "Martin",
+      "lastName": "Golero",
+      "birthday": "1991",
+      "gender": "M"
+    },
+    "rels": { "parents": ["21", "61"] }
+  },
+  {
+    "id": "64",
+    "data": {
+      "firstName": "Ma. Rita",
+      "lastName": "Golero",
+      "birthday": "1993",
+      "gender": "F"
+    },
+    "rels": { "parents": ["21", "61"] }
+  },
+  {
+    "id": "65",
+    "data": {
+      "firstName": "Ma. Christine",
+      "lastName": "Golero",
+      "birthday": "1999",
+      "gender": "F"
+    },
+    "rels": { "parents": ["21", "61"] }
+  },
+  {
+    "id": "66",
+    "data": {
+      "firstName": "Nestor",
+      "lastName": "Carballo",
+      "birthday": "0000",
+      "gender": "M"
+    },
+    "rels": { "spouses": ["22"], "children": ["67"] }
+  },
+  {
+    "id": "67",
+    "data": {
+      "firstName": "Ness",
+      "lastName": "Carballo",
+      "birthday": "1988",
+      "gender": "F"
+    },
+    "rels": { "parents": ["22", "66"], "children": ["68", "69"] }
+  },
+  {
+    "id": "68",
+    "data": {
+      "firstName": "Noel",
+      "lastName": "",
+      "birthday": "0000",
+      "gender": "M"
+    },
+    "rels": { "parents": ["67"] }
+  },
+  {
+    "id": "69",
+    "data": {
+      "firstName": "Shine",
+      "lastName": "",
+      "birthday": "0000",
+      "gender": "F"
+    },
+    "rels": { "parents": ["67"] }
+  },
+  {
+    "id": "70",
+    "data": {
+      "firstName": "Bebing",
+      "lastName": "Golero",
+      "birthday": "0000",
+      "gender": "F"
+    },
+    "rels": {
+      "spouses": ["23"],
+      "children": ["71", "72", "73"]
+    }
+  },
+  {
+    "id": "71",
+    "data": {
+      "firstName": "Rowena",
+      "lastName": "Golero",
+      "birthday": "1989",
+      "gender": "F"
+    },
+    "rels": {
+      "parents": ["23", "70"]
+    }
+  },
+  {
+    "id": "72",
+    "data": {
+      "firstName": "Rowel",
+      "lastName": "Golero",
+      "birthday": "1992",
+      "gender": "M"
+    },
+    "rels": {
+      "parents": ["23", "70"]
+    }
+  },
+  {
+    "id": "73",
+    "data": {
+      "firstName": "Mary Bell",
+      "lastName": "Golero",
+      "birthday": "2007",
+      "gender": "F"
+    },
+    "rels": {
+      "parents": ["23", "70"]
+    }
+  },
+  {
+    "id": "74",
+    "data": {
+      "firstName": "Alex",
+      "lastName": "Nadores",
+      "birthday": "0000",
+      "gender": "M"
+    },
+    "rels": {
+      "spouses": ["24"],
+      "children": ["75", "76", "77", "78", "79"]
+    }
+  },
+  {
+    "id": "75",
+    "data": {
+      "firstName": "Angela",
+      "lastName": "Nadores",
+      "birthday": "1996",
+      "gender": "F"
+    },
+    "rels": {
+      "parents": ["24", "74"]
+    }
+  },
+  {
+    "id": "76",
+    "data": {
+      "firstName": "Mary Rose",
+      "lastName": "Nadores",
+      "birthday": "1998",
+      "gender": "F"
+    },
+    "rels": {
+      "parents": ["24", "74"]
+    }
+  },
+  {
+    "id": "77",
+    "data": {
+      "firstName": "Christopher",
+      "lastName": "Nadores",
+      "birthday": "2000",
+      "gender": "M"
+    },
+    "rels": {
+      "parents": ["24", "74"]
+    }
+  },
+  {
+    "id": "78",
+    "data": {
+      "firstName": "Alex G.",
+      "lastName": "Nadores",
+      "birthday": "2003",
+      "gender": "M"
+    },
+    "rels": {
+      "parents": ["24", "74"]
+    }
+  },
+  {
+    "id": "79",
+    "data": {
+      "firstName": "Mary Joy",
+      "lastName": "Nadores",
+      "birthday": "2006",
+      "gender": "F"
+    },
+    "rels": {
+      "parents": ["24", "74"]
+    }
+  },
+  {
+    "id": "80",
+    "data": {
+      "firstName": "Vincent",
+      "lastName": "Fortaleza",
+      "birthday": "0000",
+      "gender": "M"
+    },
+    "rels": {
+      "spouses": ["25"],
+      "children": ["81"]
+    }
+  },
+  {
+    "id": "81",
+    "data": {
+      "firstName": "Marcus Jeon",
+      "lastName": "Fortaleza",
+      "birthday": "2006",
+      "gender": "M"
+    },
+    "rels": {
+      "parents": ["25", "80"]
+    }
+  },
+  {
+    "id": "82",
+    "data": {
+      "firstName": "Jeric",
+      "lastName": "Ysonza",
+      "birthday": "0000",
+      "gender": "M"
+    },
+    "rels": {
+      "spouses": ["62"], "children": ["83"]
+    }
+  },
+  {
+    "id": "83",
+    "data": {
+      "firstName": "Ethan",
+      "lastName": "Ysonza",
+      "birthday": "0000",
+      "gender": "M"
+    },
+    "rels": {
+      "parents": ["62", "82"]
+    }
   }
 ]
